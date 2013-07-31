@@ -46,26 +46,6 @@
 (defn load-bots [conf]
   (pmap load-bot (:bots conf)))
 
-;(defn send-jersh [bot]
-;  (ircj/send-message (:irc bot) "#SPARCnet" "joshskimore: jersh"))
-;
-;(defn send-jershes []
-;  (future
-;    (while true
-;      (Thread/sleep (rand 5000))
-;      (if (> (count (@bots 1)))
-;        (send-jersh (rand-nth @bots))))))
-;
-;(defn send-node-bash [bot]
-;  (ircj/send-message (:irc bot) "#SPARCnet" (str "jmar777: nodejizz is " (rand-nth ["stupid" "dumb" "evil" "dastardly" "not cool" "super lame" "weak" "horrible" "crappy" "nasty" "poop"]))))
-;
-;(defn send-node-bashes []
-;  (future
-;    (while true
-;      (Thread/sleep (rand 5000))
-;      (if (> (count (@bots 1)))
-;        (send-node-bash (rand-nth @bots))))))
-
 (defroutes app-routes
   (GET "/" [] "<h1>Hello World</h1>")
   (route/not-found "<h1>Page not found</h1>"))
