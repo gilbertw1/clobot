@@ -1,4 +1,4 @@
 clobot
 ======
 
-A clojure irc bot
+A clojure irc bot (cause why not?)

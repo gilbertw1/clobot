@@ -1,0 +1,24 @@
+{
+    "bots": [{
+        "id": "1",
+        "name": "BurritoJustice",
+        "server": "irc.freenode.net",
+        "port": 6667,
+        "channels": ["#SPARCnet"],
+        "plugins": ["echo","tell","beer30","hackernews"]
+    },{
+        "id": "2",
+        "name": "ElLuchadore",
+        "server": "irc.freenode.net",
+        "port": 6667,
+        "channels": ["#SPARCnet"],
+        "plugins": ["echo","tell","beer30","hackernews"]
+    },{
+        "id": "3",
+        "name": "ChalupaGrande",
+        "server": "irc.freenode.net",
+        "port": 6667,
+        "channels": ["#SPARCnet"],
+        "plugins": ["echo","tell","beer30","hackernews"]
+    }]
+}
