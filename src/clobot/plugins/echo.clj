@@ -1,6 +1,6 @@
 (ns clobot.plugins.echo)
 
-(def echo-rx #"echo (.*)")
+(def echo-rx #"^\s*echo (.*)")
 
 (defn echo-fn [respond nick channel [[full msg]]]
   (respond msg))

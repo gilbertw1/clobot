@@ -4,7 +4,7 @@
 
 (def beer30-status-url "https://beer30.sparcedge.com/status")
 
-(def beer30-status-rx #"beer30\sstatus.*")
+(def beer30-status-rx #"^\s*beer30")
 
 (defn get-beer30-status []
   (let [res (client/get beer30-status-url)

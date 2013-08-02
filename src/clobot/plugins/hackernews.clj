@@ -3,7 +3,7 @@
 
 (def hn-feed-url "https://news.ycombinator.com/rss")
 
-(def hn-feed-rx #"hn.*")
+(def hn-feed-rx #"^\s*hn")
 
 (defn get-hn-feed []
   (let [hn-feed (rss/parse-feed hn-feed-url)]

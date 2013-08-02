@@ -5,6 +5,7 @@
             [clobot.plugins.tell :as tell]
             [clobot.plugins.hackernews :as hn]
             [clobot.plugins.github :as gh]
+            [clobot.plugins.coderwall :as cw]
             [clobot.plugins.clojure :as clj]))
 
 (def plugins (atom {}))
@@ -19,4 +20,5 @@
   (register-plugin "hackernews" hn/hn-functions)
   (register-plugin "clojuredoc" cdoc/cdoc-functions)
   (register-plugin "github" gh/gh-functions)
+  (register-plugin "coderwall" cw/coderwall-functions)
   (register-plugin "beer30" beer30/beer30-functions))
