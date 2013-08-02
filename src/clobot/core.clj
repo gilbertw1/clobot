@@ -19,7 +19,7 @@
 
 (defn respond-fn [irc channel]
   (fn [msg]
-    (ircj/send-message irc channel msg)))
+    (ircj/send-message irc channel (str msg))))
 
 (defn dispatch-to-plugins [{:keys [name irc plugins]} nick channel msg]
   (let [cmd-msg (.trim (.replaceAll msg (str name ": ") ""))]

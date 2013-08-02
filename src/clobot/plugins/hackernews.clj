@@ -7,7 +7,8 @@
 
 (defn get-hn-feed []
   (let [hn-feed (rss/parse-feed hn-feed-url)]
-    (map :title (take 10 (:entries hn-feed)))))
+    (map #(str (:title %) " (" (:url %) ")") 
+         (take 5 (:entries hn-feed)))))
 
 (defn try-get-hn-feed []
   (try

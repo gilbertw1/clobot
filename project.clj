@@ -13,4 +13,7 @@
                  [com.novemberain/monger "1.6.0"]
                  [org.clojure/core.match "0.2.0-rc2"]
                  [irclj "0.4.1"]
-                 [compojure "1.1.5"]])
+                 [compojure "1.1.5"]
+                 [org.thnetos/cd-client "0.3.6-SNAPSHOT"]
+                 [clojail "1.0.6"]
+                 [tentacles "0.2.5"]])
