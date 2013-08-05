@@ -39,7 +39,6 @@
                          (str "can't load coderwall badges for " user)))))
 
 (defn coderwall-badges-fn [respond nick channel [[full user]]]
-  (println "IN CODERWALL")
   (try-respond-with-coderwall-badges user respond))
 
 (def coderwall-functions [[coderwall-info-rx coderwall-info-fn]

@@ -5,6 +5,6 @@
         "server": "irc.freenode.net",
         "port": 6667,
         "channels": ["#supersecrettestchannel","#SPARCnet"],
-        "plugins": ["echo","tell","beer30","hackernews","clojuredoc","clojure","github"]
+        "plugins": ["echo","tell","beer30","hackernews","clojuredoc","clojure","github","coderwall"]
     }]
 }
