@@ -1,5 +1,5 @@
 (defproject clobot "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+  :description "Clojure IRC Bot"
   :url "http://example.com/FIXME"
   :main clobot.core
   :plugins [[lein-ring "0.8.6"]]
